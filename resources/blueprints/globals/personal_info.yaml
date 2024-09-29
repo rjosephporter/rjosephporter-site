@@ -7,62 +7,20 @@ tabs:
           -
             handle: first_name
             field:
-              input_type: text
-              antlers: false
               type: text
               display: 'First Name'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
           -
             handle: last_name
             field:
-              input_type: text
-              antlers: false
               type: text
               display: 'Last Name'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
           -
             handle: nickname
             field:
-              antlers: false
               type: textarea
               display: Nickname
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
           -
             handle: short_bio
             field:
-              restrict: false
-              buttons:
-                - bold
-                - italic
-                - unorderedlist
-                - orderedlist
-                - quote
-                - link
-                - image
-                - table
-              automatic_line_breaks: true
-              automatic_links: false
-              escape_markup: false
-              heading_anchors: false
-              smartypants: false
-              table_of_contents: false
-              antlers: false
               type: markdown
               display: 'Short Bio'
-              listable: hidden
-              instructions_position: above
-              visibility: visible
-              replicator_preview: true
-              hide_display: false
