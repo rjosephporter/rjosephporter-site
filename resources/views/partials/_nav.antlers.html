@@ -1,0 +1,10 @@
+<ul class="{{ ulClass }}">
+    {{ nav:main_nav }}
+    <li class="group/menu-item {{ if current_uri === url }} active{{ /if }}">
+        <a href="{{ url }}" class="group inline-flex {{ itemClass }} items-center gap-2 rounded-lg px-3 py-2 text-center text-base font-medium text-muted transition hover:bg-light hover:text-dark group-[.active]/menu-item:bg-light group-[.active]/menu-item:text-dark dark:hover:bg-dark-2 dark:hover:text-white dark:group-[.active]/menu-item:bg-dark-2 dark:group-[.active]/menu-item:text-white">
+            {{ partial src="partials/nav-icons/{title | lower}" }}
+            <span>{{ title }}</span>
+        </a>
+    </li>
+    {{ /nav:main_nav }}
+</ul>

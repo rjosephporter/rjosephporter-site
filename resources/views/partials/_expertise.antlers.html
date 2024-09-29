@@ -1,0 +1,18 @@
+<div class="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark">
+    <h3 class="text-2xl font-semibold dark:text-light">My Expert Area</h3>
+
+    <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-3">
+        {{ collection from="tech_stacks" sort="order" }}
+        <div class="text-center">
+            <div class="grid place-content-center rounded-lg bg-light p-3 dark:bg-dark-2">
+                {{ logo }}
+                <img src="{{ url}}" alt="{{ alt }}" class="h-8 w-8" />
+                {{ /logo }}
+            </div>
+            <p class="mt-1 text-base font-medium text-dark dark:text-light/70">
+                {{ title }}
+            </p>
+        </div>
+        {{ /collection }}
+    </div>
+</div>
